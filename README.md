@@ -1,11 +1,15 @@
 # Prepare-Interview-with-LangChain
 
-## PHASE-1 : Build ATS System and get feedback from GPT-4o
-- Basic UI that can handle uploading the resume in pdf or docs form
-- Take Job descrition as text input
-- Compare the resume against Job description provided
-- Provide Resume Match score
-- Provide feedback response from gpt-4o model 
+## PHASE-1: Build ATS System and get feedback from GPT-4o
+A smart Applicant Tracking System (ATS) that uses NLP, Cosine Similarity, and OpenAI GPT-4 to evaluate resumes against job descriptions. Features include:
+
+- ✅ Resume parsing (PDF, DOCX, Images)
+- 🎯 Skill extraction & ATS scoring
+- 🧾 Cover letter generation using GPT-4
+- 🤖 Chatbot for querying resume content
+- 📊 Streamlit UI for interactive usage
+
+**Tech Stack:** Python, NLP, Scikit-learn, Spacy, Streamlit, OpenAI, Tesseract OCR
 
 ## PHASE-2 : Chat with your Resume using LangChain + GPT + Chromadb 
 #### LangChain Componenents
@@ -17,9 +21,9 @@
 
 #### Retrieval Augmented Generation
 
-1. Store data to Vector Database:
-Document loading -> Splitting text into Chuncks -> Store into Vector Store
+1. Store data in Vector Database:
+Document loading -> Splitting text into chunks -> Store into Vector Store
 
 2. Retrieval(Semantic search):
-Query/Question passed to Vector Storage -> Retrive relevant splits -> from Prompt and LLM -> generate Answer
+Query/Question passed to Vector Storage -> Retrieve relevant splits -> from Prompt and LLM -> generate Answer
 
